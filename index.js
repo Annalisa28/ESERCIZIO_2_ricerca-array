@@ -16,7 +16,7 @@ import './style.css';
 const AutoriTitoli=[
   {autore:"Dante", titolo:"La Divina Commedia"},
   {autore:"Svevo", titolo:"Senilità"},
-  {autore:"Piranello", titolo:"Il fu Mattia Pascal"},
+  {autore:"Pirandello", titolo:"Il fu Mattia Pascal"},
   {autore:"Manzoni", titolo:"I promessi sposi"},
 ];
 let stringa="ma";
@@ -33,7 +33,7 @@ if(conta.length>1){
   console.log(conta.length);
 }
 else{
-  console.log(conta[0]);
+  console.log("Autore:"+ conta[0]["autore"]+ " " +"Titolo:"+ conta[0]["titolo"]);
 }
  
 
