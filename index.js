@@ -21,10 +21,10 @@ const AutoriTitoli=[
 ];
 let stringa="ma";
 const conta=[];
-AutoriTitoli.forEach(cerca);
+AutoriTitoli.filter(cerca);
 
-function cerca(value){
- if(value["autore"].toLowerCase().includes(stringa.toLowerCase()) || value["titolo"].toLowerCase().includes(stringa.toLowerCase())){
+function cerca(libro){
+ return(libro["autore"].toLowerCase().includes(stringa.toLowerCase()) || value["titolo"].toLowerCase().includes(stringa.toLowerCase())){
    conta.push(value);
  }
 }
