@@ -24,8 +24,8 @@ const conta=[];
 AutoriTitoli.filter(cerca);
 
 function cerca(libro){
- return(libro["autore"].toLowerCase().includes(stringa.toLowerCase()) || value["titolo"].toLowerCase().includes(stringa.toLowerCase())){
-   conta.push(value);
+ return(libro["autore"].toLowerCase().includes(stringa.toLowerCase()) || libro["titolo"].toLowerCase().includes(stringa.toLowerCase())){
+   conta.push(libro);
  }
 }
 
