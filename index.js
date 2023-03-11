@@ -24,16 +24,20 @@ const conta=[];
 AutoriTitoli.filter(cerca);
 
 function cerca(libro){
- return(libro["autore"].toLowerCase().includes(stringa.toLowerCase()) || libro["titolo"].toLowerCase().includes(stringa.toLowerCase())){
+ if (libro["autore"].toLowerCase().includes(stringa.toLowerCase()) || libro["titolo"].toLowerCase().includes(stringa.toLowerCase()))
+ {
    conta.push(libro);
  }
 }
 
 if(conta.length>1){
-  console.log(conta.length);
+  console.log("Alla ricerca corrispondono " + conta.length + " libri.");
+}
+else if(conta.length===1){
+  console.log("Alla ricerca corrisponde: " + "Autore:" + conta[0]["autore"]+ " " +"Titolo:"+ conta[0]["titolo"]);
 }
 else{
-  console.log("Autore:"+ conta[0]["autore"]+ " " +"Titolo:"+ conta[0]["titolo"]);
+  console.log("Nessun libro corrisponde alla ricerca.")
 }
  
 
